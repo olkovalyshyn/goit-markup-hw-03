@@ -8,7 +8,14 @@
   --button-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
 
+  background-color: green;
+  outline: 3px solid tomato;
+}
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -26,6 +33,11 @@ li {
 
 button {
   font-family: inherit;
+}
+
+/* Page header */
+.page-header {
+  background-color: var(--white-color);
 }
 
 /* logo */
@@ -90,8 +102,17 @@ button {
 }
 
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+
   color: var(--white-color);
   background-color: var(--hover-logo-web-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
