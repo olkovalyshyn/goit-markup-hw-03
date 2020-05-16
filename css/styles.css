@@ -58,8 +58,31 @@ button {
   color: var(--logo-studio-color);
 }
 
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
 /* site-nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 80px;
+}
+.site-nav .item {
+  outline: 2px solid red;
+  /* background-color: green; */
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+/* ДРУГИЙ ВАРІАНТ ДОАБАВИТИ марджини між елемнтами .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -92,8 +115,21 @@ button {
   color: var(--hover-logo-web-color);
 }
 .mail-tel-info {
+  display: flex;
+  margin-left: auto;
+
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.mail-tel-info .item + .item {
+  margin-left: 30px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 /* hero */
 .hero {
@@ -151,6 +187,16 @@ button {
   text-align: center;
 }
 /* Soft */
+.section-title.no-visual {
+  display: none;
+}
+.soft-list {
+  display: flex;
+}
+
+.soft-list .item + .item {
+  margin-left: 30px;
+}
 
 .section-soft {
   font-size: 14px;
@@ -167,14 +213,27 @@ button {
 }
 
 /* Tech */
+.tech-list {
+  display: flex;
+}
+.tech-list .item + .item {
+  margin-left: 30px;
+}
 
+.tech-list.list {
+  padding-left: 0px;
+  justify-content: center;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
 .section-work {
   margin-top: 0px;
   margin-bottom: 0px;
 
   color: var(--white-color);
   background-color: var(--temporary-background-color);
-
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -182,7 +241,29 @@ button {
   text-align: center;
 }
 
+img {
+  display: block;
+}
+
 /* Team */
+.team-list {
+  display: flex;
+}
+
+.team-list.list {
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
+.social-logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .section .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -198,8 +279,19 @@ button {
   color: var(--second-text-color);
 }
 
-/* Regular customers */
+.section.background-color {
+  background-color: var(--button-background-color);
+}
 
+/* Regular customers */
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list.list {
+  padding-left: 0px;
+}
 /* footer */
 
 .footer {
@@ -227,6 +319,7 @@ button {
 
 .developers {
   margin-bottom: 0px;
+  padding-bottom: 0px;
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
@@ -235,6 +328,15 @@ button {
 }
 
 /* ПОРТФОЛІО */
+.section.portfolio {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  outline: 2px solid tomato;
+}
+
+.no-margin {
+  margin: 0px;
+}
 
 .link-projects {
   text-decoration: none;
@@ -274,4 +376,7 @@ button {
 .button .button-portfolio:focus {
   color: var(--white-color);
   background-color: var(--hover-logo-web-color);
+}
+.footer.section.no-padding {
+  padding-bottom: 0px;
 }

@@ -11,22 +11,22 @@
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="logo-nav">
           <a href="" class="logo"><span class="logo-web">Web</span> <span class="logo-studio">Studio</span></a>
           <ul class="site-nav">
-            <li><a href="" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="mail-tel-info">
-          <li>
+          <li class="item">
             <img src="./images/image-mail.svg" alt="Піктограма пошти" width="16" height="11" />
             <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/image-tel.svg" alt="Піктограма телефону" width="10" height="14" />
             <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
           </li>
@@ -46,24 +46,24 @@
       <!--Soft-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Навички</h2>
+          <h2 class="section-title no-visual">Навички</h2>
           <ul class="soft-list list">
-            <li>
+            <li class="item">
               <img src="./images/soft-1.svg" alt="антена" width="65" height="70" />
               <h3 class="section-soft">Внимание к деталям</h3>
               <p class="soft-details">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/soft-2.svg" alt="годинник" width="67" height="70" />
               <h3 class="section-soft">Пунктуальность</h3>
               <p class="soft-details">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/soft-3.svg" alt="ноутбук" width="70" height="54" />
               <h3 class="section-soft">Планирование</h3>
               <p class="soft-details">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/soft-4.svg" alt="космонавт" width="55" height="61" />
               <h3 class="section-soft">Современные технологии</h3>
               <p class="soft-details">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
@@ -77,15 +77,15 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="tech-list list">
-            <li>
+            <li class="item">
               <img src="./images/tech-1.jpg" alt="десктоп" width="380" height="294" />
               <h3 class="section-work">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/tech-2.jpg" alt="телефон" width="380" height="294" />
               <h3 class="section-work">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/tech-3.jpg" alt="монітор" width="380" height="294" />
               <h3 class="section-work">Дизайнерские решения</h3>
             </li>
@@ -94,15 +94,15 @@
       </section>
 
       <!--Our team-->
-      <section class="section">
+      <section class="section background-color">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
-            <li>
+            <li class="item">
               <img src="./images/team-John-Smith.jpg" alt="photo John Smith" width="278" height="260" />
               <h3 class="team-name">John Smith</h3>
               <p class="team-position">Product Designer</p>
-              <ul>
+              <ul class="social-logo">
                 <li>
                   <a href=""><img src="./images/logo-instagram.svg" alt="logo-instagram" width="20" height="20" /></a>
                 </li>
@@ -117,11 +117,11 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/team-Marta-Stewart.jpg" alt="photo Marta Stewart" width="278" height="260" />
               <h3 class="team-name">Marta Stewart</h3>
               <p class="team-position">Frontend Developer</p>
-              <ul>
+              <ul class="social-logo">
                 <li>
                   <a href=""><img src="./images/logo-instagram.svg" alt="logo-instagram" width="20" height="20" /></a>
                 </li>
@@ -136,11 +136,11 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/team-Robert-Jakis.jpg" alt="photo Robert Jakis" width="278" height="260" />
               <h3 class="team-name">Robert Jakis</h3>
               <p class="team-position">Marketing</p>
-              <ul>
+              <ul class="social-logo">
                 <li>
                   <a href=""><img src="./images/logo-instagram.svg" alt="logo-instagram" width="20" height="20" /></a>
                 </li>
@@ -155,11 +155,11 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/team-Martin-Doe.jpg" alt="photo Martin Doe" width="278" height="260" />
               <h3 class="team-name">Martin Doe</h3>
               <p class="team-position">UI Designer</p>
-              <ul>
+              <ul class="social-logo">
                 <li>
                   <a href=""><img src="./images/logo-instagram.svg" alt="logo-instagram" width="20" height="20" /></a>
                 </li>
@@ -206,7 +206,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section no-padding">
       <div class="container">
         <!--Address-->
         <a href="" class="logo"><span class="logo-web">Web</span> <span class="logo-studio">Studio</span></a>
