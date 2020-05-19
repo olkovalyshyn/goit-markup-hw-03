@@ -48,6 +48,8 @@ button {
 
 /* logo */
 .logo {
+  /* padding-bottom: 10px; */
+
   text-decoration: none;
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -149,11 +151,13 @@ button {
 .hero {
   outline: 2px solid tomato;
   height: 600px;
+
   background-color: var(--temporary-background-color);
   text-align: center;
 }
 
-.hero-title {
+.hero > .hero-title {
+  padding-top: 200px;
   margin-top: 0px;
   margin-bottom: 46px;
   color: var(--white-color);
@@ -304,7 +308,7 @@ img {
 }
 
 .team-list .item {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
   background-color: var(--white-color);
 }
 
@@ -374,24 +378,29 @@ img {
 }
 
 .join-container {
-  margin-left: 179px;
-  margin-top: 56px;
+  padding-left: 69px;
+  padding-top: 56px;
 }
 .footer {
   outline: 2px solid tomato;
   background-color: var(--footer-background-color);
 }
-.address {
+.adress-container .adress {
   color: var(--white-color);
+  padding-top: 10px;
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .adress-container {
-  margin-top: 56px;
+  padding-top: 56px;
+  padding-bottom: 28px;
 }
 
+.adress .mailtel:nth-child(-n + 2) {
+  padding-bottom: 9px;
+}
 .footer-social-logo {
   display: flex;
   width: 207px;
@@ -403,21 +412,29 @@ img {
   color: var(--white-color);
 }
 .footer-social-logo .item + item {
-  margin-left: 10px;
+  padding-left: 10px;
 }
-.address > .mailtel {
+.adress > .mailtel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.address .city {
+.adress .city {
   font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.adress .city,
-.adress mailtel {
-  margin-bottom: 6px;
-}
+/* .adress .city,
+.adress .mailtel {
+  padding-bottom: 6px;
+} */
 
-.footer-title {
+.join-container .footer-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 21px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -429,10 +446,15 @@ img {
   background-color: var(--hover-logo-web-color);
 }
 
+.footer-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .developers {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-bottom: 21px;
+  padding-top: 18px;
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
