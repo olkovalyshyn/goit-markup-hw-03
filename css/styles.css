@@ -13,8 +13,8 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
-  /* outline: 2px solid tomato; */
+  width: 1200px;
+  outline: 2px solid tomato;
 }
 body {
   background-color: var(--white-color);
@@ -69,14 +69,16 @@ button {
 
 .site-nav {
   display: flex;
-  margin-left: 80px;
+  margin-left: 85px;
+  padding-left: 0px;
 }
 .site-nav .item {
-  /* outline: 2px solid red; */
+  padding-left: 0px;
+  outline: 2px solid red;
   /* background-color: green; */
 }
 
-.site-nav .item + .item {
+/* .site-nav .item + .item {
   margin-left: 50px;
 }
 /* ДРУГИЙ ВАРІАНТ ДОАБАВИТИ марджини між елемнтами .site-nav .item:not(:last-child) {
@@ -120,6 +122,7 @@ button {
 .mail-tel-info {
   display: flex;
   margin-left: auto;
+  padding-left: 0px;
 
   margin-top: 0px;
   margin-bottom: 0px;
@@ -144,22 +147,20 @@ button {
 
 /* hero */
 .hero {
-  /* outline: 2px solid tomato; */
-
+  outline: 2px solid tomato;
+  height: 600px;
+  background-color: var(--temporary-background-color);
   text-align: center;
-  margin-bottom: 94px;
 }
 
 .hero-title {
   margin-top: 0px;
   margin-bottom: 46px;
   color: var(--white-color);
-  background-color: var(--temporary-background-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -169,13 +170,11 @@ button {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-  /* text-align: center; */
+  text-decoration: none;
 
   color: var(--white-color);
   background-color: var(--hover-logo-web-color);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -185,9 +184,9 @@ button {
 /* section */
 
 .section {
-  padding-top: 0px;
+  padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .section-title {
@@ -230,7 +229,7 @@ button {
   color: var(--second-text-color);
 }
 .soft-img {
-  width: 278px;
+  width: 270px;
   height: 120px;
   background-color: var(--button-background-color);
 }
@@ -259,8 +258,10 @@ button {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 380px;
-  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  /* width: 370px;
+  height: 70px; */
   align-items: center;
   justify-content: center;
 
@@ -295,7 +296,6 @@ img {
 .team-social-logo {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 24px;
   padding-left: 0px;
 }
 
@@ -304,6 +304,7 @@ img {
 }
 
 .team-list .item {
+  margin-bottom: 24px;
   background-color: var(--white-color);
 }
 
@@ -317,9 +318,9 @@ img {
 }
 
 .section .team-position {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 16px;
-
+  margin-top: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -339,7 +340,6 @@ img {
 /* Regular customers */
 .customers-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .customers-list.list {
@@ -350,10 +350,22 @@ img {
   padding-top: 94px;
   margin-bottom: 50px;
 }
+.customers-list .item {
+  display: flex;
 
-.customers-list .item-logo:hover,
-.customers-list .item-logo:focus {
-  background-color: var(--hover-logo-web-color);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 90px;
+}
+.customers-list .item:hover,
+.customers-list .item:focus {
+  border-color: var(--hover-logo-web-color);
+}
+
+.customers-list .item + .item {
+  margin-left: 30px;
 }
 
 /* footer */
@@ -366,7 +378,7 @@ img {
   margin-top: 56px;
 }
 .footer {
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
   background-color: var(--footer-background-color);
 }
 .address {
@@ -432,7 +444,7 @@ img {
 .section.portfolio {
   padding-top: 0px;
   padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .portfolio-projects {
@@ -451,11 +463,11 @@ img {
 .container.flex {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: teal; */
+  background-color: teal;
 }
 .flex-element {
   width: 380px;
-  /* background-color: tomato; */
+  background-color: tomato;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -524,5 +536,6 @@ img {
   background-color: var(--hover-logo-web-color);
 }
 .footer.section.no-padding {
+  padding-top: 0px;
   padding-bottom: 0px;
 }
