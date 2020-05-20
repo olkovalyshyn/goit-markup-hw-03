@@ -159,7 +159,8 @@ button {
 .hero > .hero-title {
   padding-top: 200px;
   margin-top: 0px;
-  margin-bottom: 46px;
+  margin-bottom: 0px;
+  padding-bottom: 46px;
   color: var(--white-color);
 
   font-weight: 900;
@@ -394,7 +395,7 @@ img {
   letter-spacing: 0.03em;
 }
 .adress-container {
-  padding-top: 56px;
+  padding-top: 48px;
   padding-bottom: 28px;
 }
 
@@ -464,7 +465,7 @@ img {
 
 /* ПОРТФОЛІО */
 .section.portfolio {
-  padding-top: 0px;
+  padding-top: 94px;
   padding-bottom: 94px;
   outline: 2px solid tomato;
 }
@@ -485,11 +486,11 @@ img {
 .container.flex {
   display: flex;
   flex-wrap: wrap;
-  background-color: teal;
+  /* background-color: teal; */
 }
 .flex-element {
-  width: 380px;
-  background-color: tomato;
+  width: 370px;
+  /* background-color: tomato; */
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -522,13 +523,26 @@ img {
 }
 
 .link-projects .filter-project {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+.filter-picture {
+  padding-bottom: 20px;
+}
 
 .filter-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
   color: var(--second-text-color);
   font-weight: 400;
   font-size: 16px;
